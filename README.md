@@ -1,4 +1,5 @@
 # Installing SDF reader on Mac 
+Usually, the line 'make sdfutils' fails because it struggles to locate numpy or matplotlib. One way to fix it is with:
 
 ```
  export CPPFLAGS="-I/Users/williamnguyen/Library/Python/3.9/lib/python/site-packages/numpy/_core/include"
