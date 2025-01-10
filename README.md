@@ -1,3 +1,10 @@
+# Installing SDF reader on Mac 
+
+```
+ export CPPFLAGS="-I/Users/williamnguyen/Library/Python/3.9/lib/python/site-packages/numpy/_core/include"
+```
+
+
 # EPOCH instructions
 
 To clone this repository from GitHub, use the command:
