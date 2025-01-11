@@ -5,6 +5,9 @@ Usually, the line `make sdfutils` fails because it struggles to locate numpy or 
  export CPPFLAGS="-I/Users/williamnguyen/Library/Python/3.9/lib/python/site-packages/numpy/_core/include"
 ```
 
+# Restarting with loading from files
+
+Make sure to comment out the file loading to avoid re-loading the particles at restarts.
 
 # EPOCH instructions
 
