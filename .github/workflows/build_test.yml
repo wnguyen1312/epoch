@@ -19,7 +19,7 @@ jobs:
     if: github.event_name != 'pull_request_review' ||
         contains(github.event.pull_request.labels.*.name, 'auto-pr')
     # The type of runner that the job will run on
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         include:
