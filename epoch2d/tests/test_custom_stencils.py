@@ -130,8 +130,8 @@ class test_custom_stencils(SimTest):
                                                 min(yaxis), max(yaxis)])
                 im.set_clim([-1e11, 1e11])
                 t = dump['Header']['time']
-                dx = np.asscalar(dump[key].grid_mid.data[0][1]
-                                 - dump[key].grid_mid.data[0][0])
+                dx = (dump[key].grid_mid.data[0][1]
+                      - dump[key].grid_mid.data[0][0]).item()
 
                 vg_yee = c*np.cos(k_l*dx/2.0) \
                     / np.sqrt(1-(c*dt[solver]/dx*np.sin(k_l*dx/2.0))**2)
